@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\FourWeekTraining\\Week_2\\Week2_Task_Management_System\\TaskManagementSystem\\TaskManagementSystem.csproj": {}
+    "C:\\Users\\Paras\\source\\repos\\Week-2-Project\\TaskManagementSystem\\TaskManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\FourWeekTraining\\Week_2\\Week2_Task_Management_System\\TaskManagementSystem\\TaskManagementSystem.csproj": {
+    "C:\\Users\\Paras\\source\\repos\\Week-2-Project\\TaskManagementSystem\\TaskManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\FourWeekTraining\\Week_2\\Week2_Task_Management_System\\TaskManagementSystem\\TaskManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Paras\\source\\repos\\Week-2-Project\\TaskManagementSystem\\TaskManagementSystem.csproj",
         "projectName": "TaskManagementSystem",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\FourWeekTraining\\Week_2\\Week2_Task_Management_System\\TaskManagementSystem\\TaskManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\FourWeekTraining\\Week_2\\Week2_Task_Management_System\\TaskManagementSystem\\obj\\",
+        "projectPath": "C:\\Users\\Paras\\source\\repos\\Week-2-Project\\TaskManagementSystem\\TaskManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Paras\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paras\\source\\repos\\Week-2-Project\\TaskManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Paras\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

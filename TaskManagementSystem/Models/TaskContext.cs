@@ -9,7 +9,7 @@ namespace TaskManagementSystem.Models
         {
         }
         public DbSet<TaskItem> TaskItems { get; set; } = null!;
-        public DbSet<UserTable> UsersTable { get; set; }
-        public DbSet<Coment> Comments { get; set; } 
+        public DbSet<User> Users { get; set; }
+        public DbSet<Comment> Comments { get; set; } 
     }
 }
