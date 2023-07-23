@@ -42,7 +42,7 @@ namespace TaskManagementSystem
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
+            app.UseErrorHandlingMiddleware();
 
             app.MapControllers();
 

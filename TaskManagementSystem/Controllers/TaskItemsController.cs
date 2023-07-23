@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskManagementSystem.Models;
+using TaskManagementSystem.Services;
 
 namespace TaskManagementSystem.Controllers
 {
@@ -14,11 +15,33 @@ namespace TaskManagementSystem.Controllers
     public class TaskItemsController : ControllerBase
     {
         private readonly TaskContext _context;
+        
+        private readonly INotificationService _notificationService; // Declare the variable for notification service.
+
+        public TaskItemsController( INotificationService notificationService)
+        {
+            
+            _notificationService = notificationService; // Initialize the notification service using dependency injection.
+        }
 
         public TaskItemsController(TaskContext context)
         {
             _context = context;
         }
+
+        [HttpPost("{taskId}/assign/{userId}")]
+        public async Task<IActionResult> AssignTask(int taskId, int userId)
+        {
+            // ... Assign the task to the user ...
+
+            // Send notification to the assigned user.
+            var recipientUserId = userId.ToString();
+            var content = "You have been assigned a new task.";
+            await _notificationService.SendNotificationAsync(recipientUserId, content);
+
+            return NoContent();
+        }
+
 
         // GET: api/TaskItems
         [HttpGet]
@@ -122,7 +145,7 @@ namespace TaskManagementSystem.Controllers
 
         // POST: api/tasks/1/assign/2
         [HttpPost("{taskId}/assign/{userId}")]
-        public async Task<IActionResult> AssignTask(int taskId, int userId)
+        public async Task<IActionResult> AssignTasks(int taskId, int userId)
         {
             var task = await _context.TaskItems.FindAsync(taskId);
             if (task == null)
